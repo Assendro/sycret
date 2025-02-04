@@ -1,0 +1,12 @@
+# Исключить node_modules
+node_modules/
+
+# Исключить кэш gh-pages
+node_modules/.cache/
+
+# Исключить папку сборки (если не нужно добавлять dist)
+dist/
+
+# Исключить системные файлы
+.DS_Store
+Thumbs.db
