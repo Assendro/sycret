@@ -4,6 +4,16 @@
     width: 100%;
     max-width: 800px;
     margin-bottom: 100px;
+
+    @media (max-width: var.$breakpoint-desktop) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: var.$breakpoint-tablet) {
+        margin-bottom: 50px;
+    }
+    @media (max-width: var.$breakpoint-mobile) {
+        margin-bottom: 30px;
+    }
 }
 
 .slick-prev:before,

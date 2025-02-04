@@ -99,7 +99,7 @@ const Form = () => {
                         name="name"
                         value={formData.name || ''}
                         onChange={handleChange}
-                        className={errors.name ? 'error' : ''}
+                        className={errors.name ? 'form__input error' : 'form__input'}
                         placeholder="Введите ваше имя"
                     />
                     
@@ -111,6 +111,7 @@ const Form = () => {
                         <span className="error-message">Введите корректный телефон</span>
                     )}
                     <PhoneInput
+                        className={errors.name ? 'form__input error' : 'form__input'}
                         country={'ru'}
                         value={formData.phone}
                         onChange={(phone) => dispatch(setFormData({ phone }))}
@@ -129,7 +130,7 @@ const Form = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className={errors.email ? 'error' : ''}
+                        className={errors.email ? 'form__input error' : 'form__input'}
                         placeholder="Введите вашу почту"
                     />
                 </div>
@@ -141,11 +142,13 @@ const Form = () => {
                         }}
                         text='Назад'
                         disabled={false}
+                        className='form__button button'
                     />
                     <Button 
                         type="submit"
                         text='Оплатить'
                         disabled={false}
+                        className='form__button button'
                     />
                 </div>
             </form>
