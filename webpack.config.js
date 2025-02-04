@@ -6,11 +6,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-<<<<<<< HEAD
-        publicPath: '/',
-=======
         publicPath: './',
->>>>>>> bb4b140990656d29ada437f71bc14169cbecdeda
     },
     module: {
         rules: [
