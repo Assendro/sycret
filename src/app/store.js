@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import certificateReducer from '../features/certificates/certificatesSlice';
-import formReducer from '../features/form/formSlice';
+import certificateReducer from '../slices/certificates/certificatesSlice';
+import formReducer from '../slices/form/formSlice';
 
 const store = configureStore({
     reducer: {

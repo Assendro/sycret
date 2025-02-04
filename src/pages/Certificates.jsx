@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { setSelectedCertificate } from '../features/certificates/certificatesSlice'
+import { setSelectedCertificate } from '../slices/certificates/certificatesSlice'
 
 import { OSGetGoodList } from '../app/api'
 import './certificates.scss'
